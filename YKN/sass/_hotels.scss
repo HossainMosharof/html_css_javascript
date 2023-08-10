@@ -1,0 +1,50 @@
+.hotels {
+    grid-column: center-start / center-end;
+    padding: 12rem 6rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+}
+
+.hotel {
+    background-color: $color-grey-light-1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    box-shadow: 0 2rem 4rem rgba($color-black, .5);
+
+    &__img {
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+    &__name {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 1rem;
+        background-color: $color-secondary;
+        font-size: 1.5rem;
+        color: $color-white;
+        width: 80%;
+        justify-self: center;
+        margin-bottom: 2rem;
+        transform: translateY(-50%);
+    }
+
+    &__location,
+    &__rating,
+    &__class,
+    &__amount {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    &__btn {
+        grid-column: 1 / -1;
+        margin-top: 2rem;
+    }
+}
