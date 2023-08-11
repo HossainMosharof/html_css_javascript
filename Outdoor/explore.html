@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <svg class="navbar__logo">
+            <use xlink:href="/img/sprite.svg#icon-sailing-boat-water"></use>
+        </svg>
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#" class="navbar__link current">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Explore Now</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Discover all tours</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Find a place nearby</a></li>
+        </ul>
+        <div class="navbar__item">
+            <img src="/img/p-photo.jpg" alt="User Photo" class="navbar__photo">
+        </div>          
+    </nav>
+
+    <main>
+        <section class="section__tours">
+            <div class="content">
+                <div class="content__left">
+                    <div class="select">
+                        <div class="select__item">
+                            <h3 class="select__name">District</h3>
+                            <input list="district" class="select__district" placeholder="Chose a district">
+                            <datalist id="district">
+                                <option value="Dhaka">
+                                <option value="Tangail">
+                                <option value="Magura">
+                                <option value="Foridpur">
+                                <option value="Bhola">
+                                <option value="Dhaka">
+                                <option value="Tangail">
+                                <option value="Magura">
+                                <option value="Foridpur">
+                                <option value="Bhola">
+                                <option value="Dhaka">
+                                <option value="Tangail">
+                                <option value="Magura">
+                                <option value="Foridpur">
+                                <option value="Bhola">
+                                <option value="Dhaka">
+                                <option value="Tangail">
+                                <option value="Magura">
+                                <option value="Foridpur">
+                                <option value="Bhola">
+                            </datalist>
+                        </div>
+
+                        <div class="select__item">
+                            <h3 class="select__name">Type</h3>
+                            <div class="select__types">
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <span class="select__box--type">Sea</span>
+                                </div>
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <span class="select__box--type">Island</span>
+                                </div>
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <span class="select__box--type">Forest</span>
+                                </div>
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <span class="select__box--type">Mountain</span>
+                                </div>
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <span class="select__box--type">Historical</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="select__item select__rating">
+                            <h3 class="select__name">Rating</h3>
+                            <div class="select__types">
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="select__box">
+                                    <input type="checkbox" class="select__box--chackbox">
+                                    <svg class="select__box--star">
+                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="select__filter">Filter</div>
+                    </div>
+                </div>
+
+                <div class="content__right">
+                    <div class="place">
+                        <div class="place__box">
+                            <figure class="place__img place__img--saint-martin"></figure>
+                            <figcaption class="place__name">St. Martin's Island</figcaption>
+                            <div class="place__about">
+                                <p class="place__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iure vero totam laborum similique id reiciendis dicta sint minima officiis magnam est.
+                                </p>
+                                <address class="place__address">
+                                    Bay of Bengal
+                                </address>
+                                <div class="place__types">
+                                    <span class="place__type">Island</span> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="place__box">
+                            <figure class="place__img place__img--sundorban"></figure>
+                            <figcaption class="place__name">Sundarbans</figcaption>
+                            <div class="place__about">
+                                <p class="place__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iure vero totam laborum similique id reiciendis dicta sint minima officiis magnam est.
+                                </p>
+                                <address class="place__address">
+                                    Bagerhat, Khulna.
+                                </address>
+                                <div class="place__types">
+                                    <span class="place__type">Forest</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="place__box">
+                            <figure class="place__img place__img--nilgiri"></figure>
+                            <figcaption class="place__name">Nilgiri Mountains</figcaption>
+                            <div class="place__about">
+                                <p class="place__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iure vero totam laborum similique id reiciendis dicta sint minima officiis magnam est.
+                                </p>
+                                <address class="place__address">
+                                    Nilgiri, Bandorban.
+                                </address>
+                                <div class="place__types">
+                                    <span class="place__type">Mountain</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="place__box">
+                            <figure class="place__img place__img--tea-garden"></figure>
+                            <figcaption class="place__name">Lakkatura Tea Garden</figcaption>
+                            <div class="place__about">
+                                <p class="place__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iure vero totam laborum similique id reiciendis dicta sint minima officiis magnam est.
+                                </p>
+                                <address class="place__address">
+                                    Lakkatura, Shylet. 
+                                </address>
+                                <div class="place__types">
+                                    <span class="place__type">Mountain</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="place__box">
+                            <figure class="place__img place__img--coxbazar"></figure>
+                            <figcaption class="place__name">Cox's Bazar Sea Beach</figcaption>
+                            <div class="place__about">
+                                <p class="place__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iure vero totam laborum similique id reiciendis dicta sint minima officiis magnam est.
+                                </p>
+                                <address class="place__address">
+                                    Cox's Bazar, Chattogram.
+                                </address>
+                                <div class="place__types">
+                                    <span class="place__type">Sea</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="place__box">
+                            <figure class="place__img place__img--shat-gombuj"></figure>
+                            <figcaption class="place__name">Sixty Dome Masjid</figcaption>
+                            <div class="place__about">
+                                <p class="place__text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quis iure vero totam laborum similique id reiciendis dicta sint minima officiis magnam est.
+                                </p>
+                                <address class="place__address">
+                                    Bagerhat, Khulna.
+                                </address>
+                                <div class="place__types">
+                                    <span class="place__type">Historica;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="footer">
+                        Copyright &copy; by Outdoors,&nbsp; All right reserved
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

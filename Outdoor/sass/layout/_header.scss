@@ -1,0 +1,22 @@
+.header {
+    background-image:linear-gradient(
+        to right, 
+        rgba($color-black, .7), 
+        rgba($color-black, .7)), 
+        url(/img/saintmartin.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 90vh;
+    clip-path: ellipse(80% 59% at 50% 40%);
+    position: relative;
+  
+    &__box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+

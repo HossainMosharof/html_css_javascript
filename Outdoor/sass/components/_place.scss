@@ -1,0 +1,87 @@
+.place {
+    padding: 3rem 7rem;
+    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 25rem));
+    justify-content: space-between;
+    grid-gap: 5rem;
+
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: repeat(2, minmax(min-content, 35rem));
+    }
+
+    @media only screen and (max-width: 400px) {
+        grid-template-columns: repeat(1, minmax(min-content, 35rem));
+        justify-content: center;
+    }
+
+    &__box {
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: $color-white;
+        box-shadow: 0 2rem 3rem rgba($color-black, .5);
+    }
+
+    &__img {
+        height: 15rem;
+        background-size: cover;
+        background-position: center;
+
+        &--saint-martin {
+            background-image: url(../../img/saint-martin.jpeg);
+        }
+
+        &--sundorban {
+            background-image: url(../../img/sundorban.jpg);
+        }
+
+        &--nilgiri {
+            background-image: url(../../img/nilgiri.jpg); 
+        }
+
+        &--tea-garden {
+            background-image: url(../../img/tea-garden.jpeg); 
+        }
+
+        &--coxbazar {
+            background-image: url(../../img/coxbazar.jpg); 
+        }
+
+        &--shat-gombuj {
+            background-image: url(../../img/shat-gombuj.jpg); 
+        }
+    }
+
+    &__name {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        color: $color-black;
+        text-align: center;
+    }
+
+    &__about {
+        padding: .5rem 1rem 1rem 1rem;
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+    &__address {
+        font-size: 1.3rem;
+        color: $color-black;
+        margin-bottom: 1rem;
+    }
+
+    &__type {
+        font-size: 1.2rem;
+        padding: .3rem 1rem;
+        background-color: #b7d5f0;
+        color: $color-black;
+        border-radius: 40px;
+        margin-right: 1rem;
+        text-align: center;
+    }   
+}

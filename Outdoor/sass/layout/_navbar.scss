@@ -1,0 +1,68 @@
+.navbar {
+    background-color: rgba(32, 41, 56, 1);
+    padding: .5rem 2rem;
+    height: 6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sticky;
+
+    @media only screen and (max-width: 525px) {
+        flex-wrap: wrap;
+        height: 20rem;
+        position: static;
+    }
+
+    &__logo {
+        width: 5rem;
+        height: 5rem;
+        fill: $color-primary-dark;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 525px) {
+            order: 1;
+            flex: 0 0 100%;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.5rem;
+        color: $color-white;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+       
+        &:hover,
+        &:active {
+            background-color: #444;
+            color: #f1c79c;
+        }
+
+        @media only screen and (max-width: 525px) {
+            padding: .5rem 1rem;
+        }
+    }
+
+    &__photo {
+        width: 4rem;
+        border-radius: 50%;
+        margin-right: .5rem;
+        cursor: pointer;
+    }
+}
